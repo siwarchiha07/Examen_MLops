@@ -1,12 +1,34 @@
+# API et serveur
+fastapi
+uvicorn[standard]
+python-multipart
+
+# Traitement de données
 pandas
 numpy
-requests
-beautifulsoup4
-tqdm
-sentence-transformers
 scikit-learn
-faiss-cpu
-streamlit
-fastapi
-uvicorn
-python-multipart
+
+# NLP et embeddings
+# Version CPU uniquement (beaucoup plus petite)
+torch --index-url https://download.pytorch.org/whl/cpu
+sentence-transformers
+
+# MLOps - MLflow
+mlflow
+boto3
+psycopg2-binary
+
+# MLOps - ZenML
+zenml[mlflow]
+zenml[server]
+
+# Optimisation des hyperparamètres
+optuna
+
+# Versioning des données
+dvc
+dvc-s3
+
+# Utilitaires
+requests
+tqdm
