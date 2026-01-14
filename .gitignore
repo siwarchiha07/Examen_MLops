@@ -1,0 +1,25 @@
+
+# --- Environnement et Système ---
+venv/
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+
+# --- Données (Point 3.4 du Cahier des Charges) ---
+# On ignore le dossier data car il sera géré par DVC [cite: 159, 459]
+data/
+
+# --- Modèles et Poids (Point 3.1 du TP7) ---
+# On ne met pas les fichiers .pt ou .pkl sur Git 
+models/*.pt
+models/*.pkl
+models/*.bin
+models/*.h5
+
+# --- MLOps Tracking ---
+# On ignore les dossiers de logs locaux de MLflow et ZenML [cite: 375, 579]
+mlruns/
+.zenml/
+.dvc/
+! .dvc/config
